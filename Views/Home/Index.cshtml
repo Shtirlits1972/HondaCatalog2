@@ -1,0 +1,107 @@
+﻿<html>
+<head>
+    <title>Хонда каталог</title>
+</head>
+<body>
+
+    <br />
+
+
+    <table class="table table-light table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    №
+                </th>
+                <th>
+                    Ccылки
+                </th>
+                <th>
+                    Примечания
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="/vehicle/vin?vin=JHMED73600S205949">/vehicle/vin?vin=JHMED73600S205949</a>
+                </td>
+                <td>    Получение списка автомобилей по VIN  </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="/image?image_id=Yamato.jpg">/image?image_id=Yamato.jpg</a>
+                </td>
+                <td>
+                    Получение картинки
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <a href="/models">/models</a>
+                </td>
+                <td>
+                    Список моделей
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>
+                    <a href="/mgroups?vehicle_id=8030">/mgroups?vehicle_id=8030</a>
+                </td>
+                <td>
+                    Получение груп запчастей по авто
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <a href="/vehicle?nplblk=B__0100&hmodtyp=1667">/vehicle?nplblk=B__0100&hmodtyp=1667</a>
+                </td>
+                <td>
+                    Список деталей в группе
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    <a href="/vehicle/sgroups?hmodtyp=8030&nplgrp=2&npl=19SELKD1">/vehicle/sgroups?hmodtyp=8030&nplgrp=2&npl=19SELKD1</a>
+                </td>
+                <td>
+                    Получение подгруп запчастей по авто  <br />
+                    без параметра npl (каталог разборки) выполняется долго и много одинаковых значений!!! <br />
+                    Id = (pbldst.npl, '_', pblokt.nplblk)
+                </td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>
+                    <a href="/ﬁlters?modelId=ACCORD AERODECK_1996_5_1H">/ﬁlters?modelId=ACCORD AERODECK_1996_5_1H</a>
+                </td>
+                <td>
+                    Список фильтров
+                </td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>
+                    <a href="/ﬁlter-cars?modelId=ACCORD AERODECK_1996_5_1H&param=5MT&param=KG&param=F22B5&page=1&page_size=10">
+                    /ﬁlter-cars?modelId=ACCORD AERODECK_1996_5_1H&param=5MT&param=KG&param=F22B5&page=1&page_size=10</a>
+                </td>
+                <td>
+                    Список авто, которые соответствуют выбранным фильтрам
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
