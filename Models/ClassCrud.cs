@@ -24,7 +24,7 @@ namespace HondaCatalog2.Models
                 try
                 {
                     string nfrmpf = vin.Substring(0, 11);
-                    string nfrmseqepc = vin.Substring(8, 8);
+                    string nfrmseqepc = vin.Substring(9, 8);
 
                     int h = 0;
 
@@ -44,9 +44,9 @@ namespace HondaCatalog2.Models
                                 "         AND pmodlt.dmodyr = pmotyt.dmodyr " +
                                 "         AND pmodlt.xcardrs = pmotyt.xcardrs) " +
                                 " 	,pmdldt " +
-                                " WHERE(pmotyt.nfrmpf = 'JHMED73600S') " +
-                                "     AND(pmotyt.nfrmseqepcstrt <= '0S205949') " +
-                                "     AND(pmotyt.nfrmseqepcend >= '0S205949') " +
+                                " WHERE(pmotyt.nfrmpf = '@nfrmpf') " +
+                                "     AND(pmotyt.nfrmseqepcstrt <= '@nfrmseqepc') " +
+                                "     AND(pmotyt.nfrmseqepcend >=' @nfrmseqepc') " +
                                 "         AND((NOT EXISTS(SELECT 1 " +
                                 "                             FROM pmdldt " +
                                 "                            WHERE pmdldt.cmodnamepc = pmodlt.cmodnamepc " +
@@ -83,6 +83,9 @@ namespace HondaCatalog2.Models
             string strCommand = "SELECT CONCAT(cmodnamepc,'_', dmodyr, '_',xcardrs,'_',cmftrepc) AS Id, " +
                 " CONCAT(cmodnamepc,' ', dmodyr, ' ',xcardrs,' ',cmftrepc) as cmodnamepc, " + 
                 " CONCAT(cmodnamepc,'-', dmodyr, '-',xcardrs,'-',cmftrepc) as seo_url FROM pmodlt;";
+
+            int h = 0;
+
             try
             {
                 using (IDbConnection db = new MySqlConnection(strConn))
@@ -214,7 +217,6 @@ namespace HondaCatalog2.Models
 
             return list;
         }
-
         public static List<Filters> GetFilters(string modelId)
         {
             List<Filters> filters = new List<Filters>();
