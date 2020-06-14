@@ -7,7 +7,6 @@ namespace HondaCatalog2.Models.Dto
 {
     public class CarTypeInfo
     {
-		
 		public int hmodtyp { get; set; }         //   hmodtyp 'Код типа автомобиля',
 		public string cmodnamepc { get; set; }   //  cmodnamepc  'Модель автомобиля',
 		public string xcardrs { get; set; }      //  xcardrs  'Кол-во дверей',

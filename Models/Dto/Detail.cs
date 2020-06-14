@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace HondaCatalog2.Models.Dto
 {
-    public class Sgroups
+    public class Detail
     {
-        public string node_id { get; set; }
         public string name { get; set; }
-        public string image_id { get; set; }
-        public string image_ext { get; set; }
+        public string number { get; set; }
+        public List<hotspots> hotspots { get; set; }
         public List<attributes> attributes { get; set; }
+        public List<attributes> links { get; set; }
         public override string ToString()
         {
             return name;

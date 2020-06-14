@@ -6,7 +6,6 @@
 
     <br />
 
-
     <table class="table table-light table-bordered table-striped">
         <thead>
             <tr>
@@ -61,7 +60,7 @@
             <tr>
                 <td>5</td>
                 <td>
-                    <a href="/vehicle?nplblk=B__0100&hmodtyp=1667">/vehicle?nplblk=B__0100&hmodtyp=1667</a>
+                    <a href="/vehicle?vehicle_id=8030&group_id=19SELKD1_ATM0810&lang=EN">/vehicle?vehicle_id=8030&group_id=19SELKD1_ATM0810&lang=EN</a>
                 </td>
                 <td>
                     Список деталей в группе
@@ -70,12 +69,10 @@
             <tr>
                 <td>6</td>
                 <td>
-                    <a href="/vehicle/sgroups?hmodtyp=8030&nplgrp=2&npl=19SELKD1">/vehicle/sgroups?hmodtyp=8030&nplgrp=2&npl=19SELKD1</a>
+                    <a href="/vehicle/sgroups?vehicle_id=8030&group_id=2_2_19SELKD1&code_lang=EN">/vehicle/sgroups?vehicle_id=8030&group_id=2_2_19SELKD1&code_lang=EN</a>
                 </td>
                 <td>
-                    Получение подгруп запчастей по авто  <br />
-                    без параметра npl (каталог разборки) выполняется долго и много одинаковых значений!!! <br />
-                    Id = (pbldst.npl, '_', pblokt.nplblk)
+                    Получение подгруп запчастей по авто  
                 </td>
             </tr>
 
@@ -93,10 +90,53 @@
                 <td>8</td>
                 <td>
                     <a href="/ﬁlter-cars?modelId=ACCORD AERODECK_1996_5_1H&param=5MT&param=KG&param=F22B5&page=1&page_size=10">
-                    /ﬁlter-cars?modelId=ACCORD AERODECK_1996_5_1H&param=5MT&param=KG&param=F22B5&page=1&page_size=10</a>
+                        /ﬁlter-cars?modelId=ACCORD AERODECK_1996_5_1H&param=5MT&param=KG&param=F22B5&page=1&page_size=10
+                    </a>
                 </td>
                 <td>
                     Список авто, которые соответствуют выбранным фильтрам
+                </td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>
+                    <a href="/vehicleAttr?vehicle_id=91">
+                        /vehicleAttr?vehicle_id=91
+                    </a>
+                </td>
+                <td>
+                    Получение информации по авто
+                </td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>
+                    <a href="/locales">/locales</a>
+                </td>
+                <td>
+                    Список языков БД
+                </td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>
+                    <a href="/vehicle/wmi">/vehicle/wmi</a>
+                </td>
+                <td>
+                    Список wmi хонды
+                </td>
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td>
+                    <a href="/vehicle/sgroups?codes=1101&codes=1301&codes=1501&codes=1601&node_ids=1102&node_ids=1701">/vehicle/sgroups?codes=1101&codes=1301&codes=1501&codes=1601&node_ids=1102&node_ids=1701</a>
+                </td>
+                <td>
+                    Получение узлов, POST! <br />
                 </td>
             </tr>
 

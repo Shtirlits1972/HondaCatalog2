@@ -5,16 +5,13 @@ using System.Threading.Tasks;
 
 namespace HondaCatalog2.Models.Dto
 {
-    public class ModelCar
+    public class images
     {
-         public  string model_id { get; set; }  //  
-         public string model { get; set; }
-         public string seo_url { get; set; }
-
+        public string id { get; set; }
+        public string ext { get; set; }
         public override string ToString()
         {
-            return model;
+            return $"{id} {ext}";
         }
     }
 }
-
